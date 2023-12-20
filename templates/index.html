@@ -93,9 +93,9 @@
     <form action="/add" method="post">
         <label for="task">New Task:</label>
         <input type="text" id="task" name="task" required>
-        <button type="submit">Add Task</button>
+        <button type="submit" id="add-button">Add Task</button>
     </form>
-    <ul>
+    <ul id = "task-list">
         {% for task in tasks %}
             <li>{{ loop.index }}. {{ task }} <a href="{{ url_for('delete', index=loop.index0) }}">Delete</a></li>
         {% if not loop.last %}
