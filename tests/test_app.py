@@ -1,6 +1,6 @@
-# tests/test_app.py
+# test_app.py
 
-from todo-web.app import app
+from app import app  # This line is added to import the Flask app instance
 
 def test_index():
     client = app.test_client()
@@ -9,5 +9,8 @@ def test_index():
 
 def test_add_task():
     client = app.test_client()
-    response = client.post('/add', data={'task': 'Test task'})
+    # Set follow_redirects=True to follow the redirect after the post request
+    response = client.post('/add', data={'task': 'Test task'}, follow_redirects=True)
+    # The assertion should now check the final page after the redirect
     assert b'Test task' in response.data
+
