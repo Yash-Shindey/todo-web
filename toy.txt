@@ -1,0 +1,2 @@
+This is a file to understand merge conflicts.
+This is the file from the Test branch
