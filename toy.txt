@@ -1,0 +1,2 @@
+This is also to understand merge conflicts
+Thisi ss a file from Master Branch
