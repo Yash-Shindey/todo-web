@@ -1,2 +1,3 @@
-This is also to understand merge conflicts
-Thisi ss a file from Master Branch
+
+This is a file to understand merge conflicts.
+This is the file from the Test branch
